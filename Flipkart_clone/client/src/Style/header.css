@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navigation */
+.nav {
+    background-color: rgb(40, 116, 240);
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    object-fit: fill;
+
+}
+
+.logo {
+    height: 70%;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.searches {
+    background-color: white;
+    padding: 5px;
+    width: 450px;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(40, 116, 240);
+    border-radius: 2px;
+    padding-right: 10px;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1), 7px 7px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.searches input {
+    width: 410px;
+    border: none;
+    outline: none;
+}
+
+.searchinput{
+    position: absolute;
+    left: 0px;
+    top:35px;
+    width: 100%;
+    background-color: white;
+    z-index: 6;
+}
+
+.nav .loginButton {
+    color: rgb(40, 116, 240);
+    font-size: 16px;
+    padding: 4px 35px;
+    font-weight: bold;
+    border: none;
+    margin: 0px 20px;
+}
+
+.profileButton {
+    color: rgb(40, 116, 240);
+    font-size: 16px;
+    padding: 4px 10px;
+    font-weight: bold;
+    border: none;
+    margin: 0px 20px;
+
+}
+
+.profilehover{
+    position: absolute;
+    top: 52px;
+    margin-left: 18px;
+    background-color: white;
+    width: 142px;
+    height: 30px;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.3),
+        7px 7px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+    border: 1px solid black;
+    display: none;
+}
+
+.profileArrow {
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.profileButton:focus-within + .profilehover{
+    display:block;
+    z-index: 5;
+}
+
+.navLink {
+    color: white;
+    margin: 0px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.angle_down {
+    font-size: 12px;
+}
+
+.itemNumbers{
+    position: absolute;
+    top:-3px;
+    left:18px;
+    height: 62%;
+    width: 27%;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(255, 97, 97);
+    color: #fff;
+}
+
+.Loginhover {
+    position: absolute;
+    top: 52px;
+    margin-left: -50px;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.2),
+        7px 7px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1;
+}
+
+.Loginhover .triangle {
+
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 14px solid white;
+    position: relative;
+    top: -10px;
+    margin: 0px auto;
+}
+
+.menuList .signList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.signUp {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signUp:hover {
+    text-decoration: underline;
+}
+
+.menuList .profileList {
+
+    display: flex;
+    border-top: 1px solid rgb(215, 203, 203);
+    padding: 7px 20px 0px 20px;
+
+}
+
+.profileList i {
+    color: rgb(40, 116, 240);
+}
+
+.profileList p {
+    margin-left: 33px;
+}
+
+.loginButton:hover+.Loginhover {
+    display: block;
+    z-index: 1;
+}
+
+.loginButton:focus-within+.Loginhover {
+    display: block;
+    z-index: 1;
+}
